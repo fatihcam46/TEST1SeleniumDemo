@@ -30,7 +30,7 @@ public class StepDefs {
     public void i_search_for(String search) throws Throwable {
         Driver.getDriver().findElement(By.cssSelector("[id*='search-query']")).sendKeys(search + Keys.ENTER);
     }
-
+//
     @Then("^I should see the results$")
     public void i_should_see_the_results() throws Throwable {
         Thread.sleep(2000);
